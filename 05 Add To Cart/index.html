@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Store - Products & Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">TechZone</div>
+      <div style="color: #757575">Free shipping on orders over $100</div>
+    </header>
+
+    <div class="main-container">
+      <div class="products-grid" id="products-grid">
+        <!-- Products will be added dynamically -->
+      </div>
+
+      <div class="cart-container">
+        <div class="cart-title">
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-shopping-cart-icon lucide-shopping-cart"
+            >
+              <circle cx="8" cy="21" r="1" />
+              <circle cx="19" cy="21" r="1" />
+              <path
+                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+              />
+            </svg>
+          </span>
+          Your Cart <span id="cart-count">0</span>
+        </div>
+
+        <div class="cart-items" id="cart-items">
+          <div class="empty-cart" id="empty-cart-message">
+            Your cart is empty
+          </div>
+          <!-- Cart items will be added dynamically -->
+        </div>
+
+        <div class="cart-summary">
+          <div class="cart-row">
+            <span>Subtotal:</span>
+            <span id="cart-subtotal">$0.00</span>
+          </div>
+          <div class="cart-row">
+            <span>Shipping:</span>
+            <span id="cart-shipping">$0.00</span>
+          </div>
+          <div class="cart-row cart-total">
+            <span>Total:</span>
+            <span id="cart-total">$0.00</span>
+          </div>
+
+          <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
